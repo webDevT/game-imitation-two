@@ -1,0 +1,463 @@
+//start style
+.game__content
+    width: 339px 
+    height: 524px
+    background: url('../img/game-bg.svg'), linear-gradient(180deg, #5D35F1 0%, #5B84DE 100%)
+.game__header
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding: 10px
+    padding-bottom: 0
+.game-circle-button
+    width: 37px
+    height: 37px
+    background: #816DDC
+    display: flex 
+    justify-content: center 
+    align-items: center
+    border-radius: 50%
+    border: 1px solid rgba(#fff, .1)
+    cursor: pointer
+    margin-right: 8.65px
+    position: relative
+    background-size: 80%
+    img 
+        max-width: 100%
+.game__col
+    display: flex 
+    align-items: center
+
+.game-circle-shine__wrapper:before 
+    content: ''
+    top: 50%
+    left: 50%
+    transform: translateY(-48%) translateX(-56%)
+    background: url('../img/shine.svg')
+    background-size: 100%
+    background-position: center
+    min-width: 59px
+    height: 54px
+    position: absolute
+    z-index: 0
+.game-circle-shine__wrapper
+    position: relative
+.game-circle-button
+    position: relative
+    z-index: 1
+.coins-wrapper 
+    display: flex 
+    align-items: center
+    font-size: 12.62px
+    font-family: 'Play'
+    font-weight: 700
+    color: #fff 
+    margin-left: 7px
+    background: #816DDC
+    border: 1px solid rgba(#fff, .1)
+    padding-right: 5.5px
+    border-radius: 21px
+    height: 25px
+.coin-icon 
+    margin-left: -6px
+    width: 29px
+    height: 29px
+    background: url('../img/coin.svg')
+    background-position: center
+    background-repeat: no-repeat
+    background-size: 100%
+.game-image-wrapper__header 
+    display: flex 
+    justify-content: space-between
+    align-items: center
+    font-size: 12.62px
+    color: #fff
+.game-image-wrapper 
+    width: 194px
+    margin-left: auto 
+    margin-right: auto
+    margin-top: 20px
+.game-image-wrapper__header
+    font-family: 'Play'
+    font-weight: 700
+    padding-bottom: 4px
+.game-image-item
+    position: relative
+.game-buttons-left
+    position: absolute 
+    bottom: 10px
+    left: 0
+    transform: translateX(-14px)
+    .game-circle-button 
+        margin-top: 7px
+.game-buttons-right 
+    position: absolute
+    bottom: 10px
+    right: 0
+    transform: translateX(25px)
+.telegram-icon
+    position: absolute
+    top: 0
+    right: 0
+.question 
+    text-align: center
+    font-size: 14px 
+    font-weight: 700
+    color: #fff
+    font-family: 'Play', sans-serif
+    margin-top: 11px
+.answer-wrapper
+    padding-left: 10px 
+    padding-right: 10px
+    display: flex
+    margin-left: auto 
+    margin-right: auto
+    justify-content: center
+    margin-top: 10px
+.answer-item
+    width: 13.66px
+    height: 17.76px
+    padding: 5.3px 3px 
+    padding-top: 3px
+    padding-bottom: 3px
+    display: flex 
+    justify-content: center 
+    align-items: center
+    font-size: 21px
+    font-weight: 700 
+    font-family: 'Play', sans-serif
+    color: #fff
+    border-bottom: 3px solid #fff
+    margin-left: 2px 
+    margin-right: 2px
+.answer-item--transparent
+    opacity: 0.4
+.buttons-wrapper
+    display: flex 
+    flex-wrap: wrap
+    justify-content: space-between
+    padding-top: 11px 
+    padding-bottom: 11px
+    padding-left: 5px 
+    padding-right: 5px
+.letter-item
+    width: 27.32px 
+    height: 27.32px
+    font-family: 'Play', sans-serif
+    font-size: 15.48px 
+    font-weight: 700
+    color: #fff
+    background: #61DA1B
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 2.28px
+    margin-left: 2px 
+    margin-right: 2px
+    margin-bottom: 5px
+.letter-item--checked 
+    opacity: 0.4
+//end style
+
+//start theme 2
+.theme-wrapper .game__content
+    .game-circle-button-1
+        background-image: url('../img/icon1.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-2
+        background-image: url('../img/icon2.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-3
+        background-image: url('../img/icon3.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-4
+        background-image: url('../img/icon4.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-5
+        background-image: url('../img/icon5.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-6
+        background-image: url('../img/icon6.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .coin-icon 
+        background: url('../img/coin.svg')
+        background-position: center
+        background-repeat: no-repeat
+        background-size: 100%
+    .game-circle-shine__wrapper:before
+        background: url('../img/shine.svg')
+        background-size: 100%
+        background-position: center
+//end theme 1
+
+//start theme 2
+.theme-wrapper2 .game__content
+    background: url(../img/game-bg2.svg), linear-gradient(180deg, #B0F9FC 0%, #B0F9FC 100%)
+    .game-circle-button-1
+        background-image: url('../img/icon2.1.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-2
+        background-image: url('../img/icon2.2.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-3
+        background-image: url('../img/icon2.3.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-4
+        background-image: url('../img/icon2.4.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-5
+        background-image: url('../img/icon2.5.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-6
+        background-image: url('../img/icon2.6.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .coin-icon 
+        background: url('../img/coin2.svg')
+        background-position: center
+        background-repeat: no-repeat
+    .game-circle-button
+        background-color: #91cccf
+    .coins-wrapper
+        background-color: #91cccf
+        color: #233c3d
+    .game-circle-shine__wrapper:before
+        background: url('../img/shine2.svg')
+        background-size: 100%
+        background-position: center
+    .game-image-wrapper__header,
+    .question,
+    .answer-item
+        color: #233c3d
+    .answer-item
+        border-color: #233c3d
+    .letter-item
+        background: #28a2e4   
+//end theme 2
+
+//start theme 3
+.theme-wrapper3 .game__content
+    background: url(../img/game-bg3.png)
+    .game-circle-button-1
+        background-image: url('../img/icon3.1.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-2
+        background-image: url('../img/icon3.2.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-3
+        background-image: url('../img/icon3.3.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-4
+        background-image: url('../img/icon3.4.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-5
+        background-image: url('../img/icon3.5.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-6
+        background-image: url('../img/icon3.6.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .coin-icon 
+        background: url('../img/coin3.svg')
+        background-position: center
+        background-repeat: no-repeat
+    .game-circle-button
+        background-color: #383573
+    .coins-wrapper
+        background-color: #816ddc
+    .letter-item
+        background: #7331ff 
+    .game-circle-shine__wrapper:before
+        background: url('../img/shine3.svg')
+        background-size: 100%
+        background-position: center 
+//end theme 3
+
+//start theme 4
+.theme-wrapper4 .game__content
+    background: url(../img/game-bg4.png)
+    .game-circle-button-1
+        background-image: url('../img/icon4.1.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-2
+        background-image: url('../img/icon4.2.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-3
+        background-image: url('../img/icon4.3.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-4
+        background-image: url('../img/icon4.4.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-5
+        background-image: url('../img/icon4.5.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-6
+        background-image: url('../img/icon4.6.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .coin-icon 
+        background: url('../img/coin4.svg')
+        background-position: center
+        background-repeat: no-repeat
+    .game-circle-button
+        background-color: #ff31f1
+    .coins-wrapper
+        background-color: #ff31f1
+    .letter-item
+        background: #ff31f1 
+    .game-circle-shine__wrapper:before
+        background: url('../img/shine4.svg')
+        background-size: 100%
+        background-position: center 
+//end theme 4
+
+//start theme 5
+.theme-wrapper5 .game__content
+    background: url(../img/game-bg5.png)
+    .game-circle-button-1
+        background-image: url('../img/icon5.1.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-2
+        background-image: url('../img/icon5.2.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-3
+        background-image: url('../img/icon5.3.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-4
+        background-image: url('../img/icon5.4.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-5
+        background-image: url('../img/icon5.5.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-6
+        background-image: url('../img/icon5.6.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .coin-icon 
+        background: url('../img/coin5.svg')
+        background-position: center
+        background-repeat: no-repeat
+    .game-circle-button
+        background-color: #ff00b2
+    .coins-wrapper
+        background-color: #ff00b2
+    .letter-item
+        background: #ff00b2 
+    .game-circle-shine__wrapper:before
+        background: url('../img/shine5.svg')
+        background-size: 100%
+        background-position: center 
+//end theme 5
+
+//start theme 6
+.theme-wrapper6 .game__content
+    background: url(../img/game-bg6.png)
+    background-size: cover
+    .game-circle-button-1
+        background-image: url('../img/icon6.1.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-2
+        background-image: url('../img/icon6.2.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-3
+        background-image: url('../img/icon6.3.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-4
+        background-image: url('../img/icon6.4.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-5
+        background-image: url('../img/icon6.5.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .game-circle-button-6
+        background-image: url('../img/icon6.6.svg')
+        background-repeat: no-repeat
+        background-position: center
+    .coin-icon 
+        background: url('../img/coin6.svg')
+        background-position: center
+        background-repeat: no-repeat
+    .game-circle-button
+        background-color: #5dab2a
+    .coins-wrapper
+        background-color: #5dab2a
+    .letter-item
+        background: #4293e4
+    .game-circle-shine__wrapper:before
+        background: url('../img/shine6.svg')
+        background-size: 100%
+        background-position: center 
+//end theme 6
+
+.theme-wrapper
+    background: rgba(156, 192, 196, 0.79)
+    backdrop-filter: blur(1.55px)
+    padding: 39px 88px
+    display: flex
+    justify-content: center
+    box-sizing: border-box
+.game__content
+    border: 1px solid rgba(255, 255, 255, 0.22)
+    box-shadow: 0px 6.42369px 26.2454px rgba(62, 92, 167, 0.34)
+    border-radius: 12px
+    margin-left: 15px 
+    margin-right: 15px
+.theme-wrapper
+    width: 890px
+.game-image-item 
+    img 
+        width: 268px 
+        height: 268px
+        margin-left: auto 
+        margin-right: auto
+        display: block
+        object-fit: cover 
+        object-position: center
+.game-image-wrapper
+    width: 268px 
+.letter-item
+    width: 38px 
+    height: 38px
+    font-size: 21.5px
+.theme-wrapper1
+    background: #8EADCB
+.theme-wrapper2
+    background: #679D9D
+.theme-wrapper3
+    background: #584192
+.theme-wrapper4
+    background: #39488C
+.theme-wrapper5
+    background: #5E2EBE
+.theme-wrapper6
+    background: url('../img/naturetheme.png')
