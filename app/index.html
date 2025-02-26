@@ -371,7 +371,31 @@
 
 </div>
 
+<script>
+	$(document).ready(function () {
+    setTimeout(function () {
+        $('.fit-text').each(function (ind, el) {
+            var fontSize = parseInt($(el).css('fontSize')) + 1;
+            var ourText = String($(el).html());
+            var maxHeight = $(el).height();
+            var maxWidth = $(el).width() * koef - 30;
+            var textHeight;
+            var textWidth;
+            do {
 
+                $('#jtextfill').css('fontSize', fontSize);
+                $('#jtextfill').css('fontFamily', $(el).css('fontFamily'));
+                $('#jtextfill').html(ourText);
+                textHeight = $('#jtextfill').height();
+                textWidth = $('#jtextfill').width();
+                fontSize = fontSize - 1;
+            } while ((textHeight > maxHeight || textWidth > maxWidth) && fontSize > 3);
+            $(el).css('fontSize', fontSize + 1);
+        });
+        $('title').text('CAPTURED')
+    }, 200);
+});
+</script>
 
 </body>
 </html>
